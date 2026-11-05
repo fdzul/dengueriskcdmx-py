@@ -11,6 +11,10 @@ requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
   { name = "Felipe Antonio Dzul Manzanilla", email = "felipe.dzul.m@gmail.com" },
+  { name = "Fabian Correa-Morales" },
+  { name = "Heron Huerta" },
+  { name = "María D. Mejía-Guevara" },
+  { name = "Héctor Gómez-Dantés" },
 ]
 keywords = ["dengue", "Aedes aegypti", "risk map", "Mexico City", "species distribution model", "geospatial"]
 classifiers = [
