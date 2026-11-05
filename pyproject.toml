@@ -15,6 +15,7 @@ authors = [
   { name = "Heron Huerta" },
   { name = "María D. Mejía-Guevara" },
   { name = "Héctor Gómez-Dantés" },
+  { name = "Eduardo Dávalos Becerril" },
 ]
 keywords = ["dengue", "Aedes aegypti", "risk map", "Mexico City", "species distribution model", "geospatial"]
 classifiers = [
