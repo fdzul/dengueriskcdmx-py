@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dengueriskcdmx"
+version = "0.1.0"
+description = "Data and rasters for the dengue transmission risk map of the Mexico City Metropolitan Area (Python version of the R package dengueriskcdmx)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Felipe Antonio Dzul Manzanilla", email = "felipe.dzul.m@gmail.com" },
+]
+keywords = ["dengue", "Aedes aegypti", "risk map", "Mexico City", "species distribution model", "geospatial"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["pandas>=1.5", "geopandas>=0.14", "pyogrio>=0.7"]
+
+[project.optional-dependencies]
+raster = ["rasterio>=1.3"]
+test = ["pytest", "rasterio>=1.3"]
+
+[project.urls]
+Homepage = "https://github.com/fdzul/dengueriskcdmx-py"
+"R package" = "https://github.com/fdzul/dengueriskcdmx"
+Dashboard = "https://eclectic-alfajores-088839.netlify.app/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dengueriskcdmx"]
+include = ["src/dengueriskcdmx/data/*"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/dengueriskcdmx", "tests", "README.md", "LICENSE", "scripts"]
