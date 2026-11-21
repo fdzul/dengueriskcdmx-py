@@ -2,6 +2,8 @@
 
 Data and rasters supporting the **Risk Map of Dengue Transmission in the Metropolitan Area of Mexico City**. Python version of the R package [`dengueriskcdmx`](https://github.com/fdzul/dengueriskcdmx); it ships the same data sets and rasters.
 
+dengueriskcdmx (Python) is part of the [dengueverse](https://fdzul.github.io/dengueverse/), a set of R and Python packages for the analysis of dengue transmission in Mexico.
+
 ## Installation
 
 ```bash
